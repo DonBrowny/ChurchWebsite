@@ -79,7 +79,7 @@
 						<a class="nav-link" href="#home">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
+						<a class="nav-link" href="#message">Message</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#request">Request</a>
@@ -90,8 +90,8 @@
 		<!-- /Nav -->
 	</header>
 
-	<!-- About -->
-	<div id="about" class="section md-padding">
+	<!-- message -->
+	<div id="message" class="section md-padding">
 
 		<!-- Container -->
 		<div class="container">
@@ -103,13 +103,13 @@
 			</div>
 			<div class="row row-eq-height">
 				<div class="col-sm-6">
-					<div class="about" style="background-image:url('images/verseOfDay.jpg')">
+					<div class="verse" style="background-image:url('images/verseOfDay.jpg')">
 						<h3>நீதிமொழிகள் 19:21</h3>
 						<p>மனுஷனுடைய இருதயத்தின் எண்ணங்கள் அநேகம்; ஆனாலும் கர்த்தருடைய யோசனையே நிலைநிற்கும்.</p>
 					</div>
 				</div>
 				<div class="col-sm-6">
-					<div class="about" style="background-image:url('images/verseOfDay.jpg')">
+					<div class="verse" style="background-image:url('images/verseOfDay.jpg')">
 						<h3>Proverbs 19:21</h3>
 						<p>Many are the plans in the mind of a man,but it is the purpose of the Lord that will stand.</p>
 					</div>
@@ -122,16 +122,18 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-3"></div>
-				<div class="col-sm-6 embed-responsive embed-responsive-4by3">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ruuYieGP6rA" frameborder="0" allow="autoplay; encrypted-media"
-					    allowfullscreen></iframe>
-				</div>
-			</div>
-
-			<div class="row" style="margin-top: 5px">
-				<div class="col-sm-3"></div>
-				<div class="col-sm-6 text-center">
-					<button type="button" class="btn btn-secondary">More Videos</button>
+				<div class="col-sm-6 ">
+					<div class="row text-center">
+						<h5 id="videoTitle"></h5>
+					</div>
+					<div class="row">
+						<div class="embed-responsive embed-responsive-4by3">
+							<iframe id="latest-video" class="embed-responsive-item" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="row center-content" style="margin-top: 10px">
+						<button type="button" class="btn btn-secondary">More Videos</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -140,25 +142,35 @@
 	</div>
 
 	<!-- Request -->
-	<div id="request" class="section md-padding">
-		<form>
-			<div class="form-group">
-				<label for="exampleInputEmail1">Name</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">				
+	<div id="request" class="request md-padding">
+		<div class="row center-content">
+				<div class="section-header text-center">
+						<h3 class="title">Prayer Request</h2>
+					</div>
+		</div>
+		<div class="row center-content">
+			<div class="col-sm-5">
+				<form>
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="tel" class="form-control" id="name" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<label for="contact">Contact Number</label>
+						<input type="tel" class="form-control" id="contact" aria-describedby="contactHelp" placeholder="Contact Number">
+						<small id="contactHelp" class="form-text text-muted">We'll never share your contact with anyone else.</small>
+					</div>
+					<div class="form-group">
+						<label for="request">Prayer Request</label>
+						<textarea class="form-control" id="request" rows="5"></textarea>
+					</div>
+					<div class="text-center">
+							<button type="submit" class="btn btn-primary text-center">Send Request</button>
+					</div>					
+				</form>
 			</div>
-			<div class="form-group">
-				<label for="exampleInputEmail1">Contact Number</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Contact Number">
-				<small id="emailHelp" class="form-text text-muted">We'll never share your contact with anyone else.</small>
-			</div>
-			<div class="form-group">
-				<label for="exampleFormControlTextarea1">Prayer Request</label>
-				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-			</div>
-			<button type="submit" class="btn btn-primary">Send Request</button>
-		</form>
+		</div>
 	</div>
-
 </body>
 
 </html>
