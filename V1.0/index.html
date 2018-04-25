@@ -9,9 +9,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/magnific-popup.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/magnific-popup.js"></script>
 	<script src="js/custom.js"></script>
 </head>
 
@@ -84,6 +87,9 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#request">Request</a>
 					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#video">Videos</a>
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -98,7 +104,7 @@
 
 			<div class="row center-content">
 				<div class="section-header text-center">
-					<h3 class="title">Verse of the day</h2>
+					<h2 class="title">Verse of the day</h2>
 				</div>
 			</div>
 			<div class="row row-eq-height">
@@ -132,7 +138,7 @@
 						</div>
 					</div>
 					<div class="row center-content" style="margin-top: 10px">
-						<button type="button" class="btn btn-secondary">More Videos</button>
+						<a class="btn btn-secondary" href="#video">More Videos</a>
 					</div>
 				</div>
 			</div>
@@ -144,9 +150,9 @@
 	<!-- Request -->
 	<div id="request" class="request md-padding">
 		<div class="row center-content">
-				<div class="section-header text-center">
-						<h3 class="title">Prayer Request</h2>
-					</div>
+			<div class="section-header text-center">
+				<h2 class="title">Prayer Request</h2>
+			</div>
 		</div>
 		<div class="row center-content">
 			<div class="col-sm-5">
@@ -165,10 +171,21 @@
 						<textarea class="form-control" id="request" rows="5"></textarea>
 					</div>
 					<div class="text-center">
-							<button type="submit" class="btn btn-primary text-center">Send Request</button>
-					</div>					
+						<button type="submit" class="btn btn-primary text-center">Send Request</button>
+					</div>
 				</form>
 			</div>
+		</div>
+	</div>
+
+	<!-- Videos -->
+	<div id="video" class="video md-padding">
+		<div class="row center-content">
+			<div class="section-header text-center">
+				<h2 class="title">Prayer Videos</h2>
+			</div>
+		</div>
+		<div id="videoContent" class="popup-gallery flex-container">
 		</div>
 	</div>
 </body>

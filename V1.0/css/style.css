@@ -260,8 +260,62 @@ nav.stroke .active {
 }
 
 /* Request */
+
 .request {
+    height: 100vh;
+    background-color: #d6d7d8;
+    min-height: 300px;
+}
+
+/* Request */
+
+/* video */
+
+video {
     height: 100vh;
     min-height: 300px;
 }
-/* Request */
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-item {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #555;
+}
+
+.video-thumbnails {
+    width: 480px;
+    height: 360px;
+}
+
+.video-title {
+    font-size: 1.5em;
+    width: 480px;
+}
+
+@media only screen and (max-width: 480px) {
+    .video-thumbnails {
+        width: 120px;
+        height: 90px;
+    }
+    .video-title {
+        font-size: 0.6em;
+        width: 120px;
+    }
+}
+
+/* video */
